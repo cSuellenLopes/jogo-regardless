@@ -40,9 +40,9 @@ namespace HelloWold
                 Console.WriteLine(" \\<>        |  |       <>/ ");
                 Console.WriteLine("  \\<>       |  |      <>/  ");
                 Console.WriteLine("   \\<>      |  |     <>/   ");
-                Console.WriteLine("    `\\<    |  |   <>/'    ");
-                Console.WriteLine("      `\\<  |  |  <>/'     ");
-                Console.WriteLine("        `\\<|  |<>/'       ");
+                Console.WriteLine("    `\\<    |  |    <>/'    ");
+                Console.WriteLine("      `\\<  |  |   <>/'     ");
+                Console.WriteLine("        `\\<|  | <>/'       ");
                 Console.WriteLine("          `-.  .-`         ");
                 Console.WriteLine("            '--'           ");
 
@@ -55,9 +55,9 @@ namespace HelloWold
                 Console.WriteLine(" |  _  /|  __|| | |_ | / /\\ \\ |  _  /| |  | | |    |  __|  \\___ \\___ \\ ");
                 Console.WriteLine(" | | \\ \\| |___| |__| |/ ____ \\| | \\ \\| |__| | |____| |____ ____) |___) |");
                 Console.WriteLine(" |_|  \\_\\______\\_____/_/    \\_\\_|  \\_\\_____/|______|______|_____/_____/ ");
-            
 
-            Console.WriteLine("");
+
+                Console.WriteLine("");
 
                 Console.WriteLine("INFORME SEU NOME:");
                 nome = Console.ReadLine();
@@ -72,7 +72,7 @@ namespace HelloWold
                     Who();
                 }
 
-                else {break;}
+                else { break; }
 
             }
 
@@ -136,33 +136,26 @@ namespace HelloWold
         public void Welcome()
         {
             Console.Clear();
-            Console.WriteLine("                           ####                    ");
-            Console.WriteLine("                          ####                    ");
-            Console.WriteLine("                          ####                    ");
-            Console.WriteLine("          ####            ####            ##      ");
-            Console.WriteLine("          ####                          ######    ");
-            Console.WriteLine("            ####      ############    ######      ");
-            Console.WriteLine("                  ##################    ##        ");
-            Console.WriteLine("                ######################            ");
-            Console.WriteLine("                ########################          ");
-            Console.WriteLine("              ##########################          ");
-            Console.WriteLine("              ############################        ");
-            Console.WriteLine("    ######    ############################  ######");
-            Console.WriteLine("    ######    ############################  ######");
-            Console.WriteLine("              ############################        ");
-            Console.WriteLine("              ############################        ");
-            Console.WriteLine("              ##########################          ");
-            Console.WriteLine("                ######################            ");
-            Console.WriteLine("                  ##################              ");
-            Console.WriteLine("            ####    ##############    ####        ");
-            Console.WriteLine("          ######                        ####      ");
-            Console.WriteLine("          ####                            ##      ");
-            Console.WriteLine("                          ####                    ");
-            Console.WriteLine("                          ####                    ");
-            Console.WriteLine("                          ####                    ");
+            Console.WriteLine("          ##########        ##########            ");
+            Console.WriteLine("  ############################################    ");
+            Console.WriteLine("########            ##########        ##########  ");
+            Console.WriteLine("####                  ####                  ####  ");
+            Console.WriteLine("####    ##########    ####    ##########    ####  ");
+            Console.WriteLine("####  ##############  ####  ##############  ####  ");
+            Console.WriteLine("####                  ####                  ####  ");
+            Console.WriteLine("####    ##########    ####    ##########    ####  ");
+            Console.WriteLine("####  ##############  ####  ##############  ####  ");
+            Console.WriteLine("####                  ####                  ####  ");
+            Console.WriteLine("####    ##########    ####    ##########    ####  ");
+            Console.WriteLine("####  ##############  ####  ##############  ####  ");
+            Console.WriteLine("####                  ####                  ####  ");
+            Console.WriteLine("####                  ####                  ####  ");
+            Console.WriteLine("####  ##########################################  ");
+            Console.WriteLine("################################################  ");
+            Console.WriteLine("############          ####          ############  ");
             Console.WriteLine("");
 
-            Console.WriteLine(nome + ", BEM-VINDO(A) AO JOGO: " + gameName + "!"); 
+            Console.WriteLine(nome + ", BEM-VINDO(A) AO JOGO: " + gameName + "!");
 
             Console.WriteLine("");
 
@@ -241,7 +234,7 @@ namespace HelloWold
 
                             Console.WriteLine(nome + ", DESEJA VOLTAR PARA A PÁGINA INICIAL? DIGITE SIM OU NÃO.");
                             Voltar = Console.ReadLine();
-                            
+
                             upperVoltar = Voltar.ToUpper();
 
                             if (upperVoltar == "SIM")
@@ -249,7 +242,7 @@ namespace HelloWold
                                 Console.Clear();
                                 Start(); encerrarLoop = true; // Reinicia o metodo Start chamando o Loop do While.
                                 break;
-                            } 
+                            }
 
                             else if (upperVoltar == "NÃO" || upperVoltar == "NAO")
                             {
@@ -257,7 +250,7 @@ namespace HelloWold
                                 Console.Clear();
                                 Console.WriteLine("");
 
-                                Console.WriteLine("NÃO HÁ MAIS NADA."); 
+                                Console.WriteLine("NÃO HÁ MAIS NADA.");
                                 Console.WriteLine("");
                             }
 
@@ -266,12 +259,12 @@ namespace HelloWold
                                 Console.Clear();
                                 Console.WriteLine("");
                                 Console.WriteLine("POR FAVOR, DIGITE SIM OU NÃO.");
-                            } 
-
-                             Console.WriteLine("");
-
                             }
-                               break;
+
+                            Console.WriteLine("");
+
+                        }
+                        break;
 
 
 
@@ -301,8 +294,8 @@ namespace HelloWold
                             else { break; }
                         }
 
-                        Console.WriteLine(""); 
-                        
+                        Console.WriteLine("");
+
                         break;
 
 
@@ -344,16 +337,16 @@ namespace HelloWold
                                 Console.WriteLine("ERRO! POR FAVOR, DIGITE SIM OU NÃO.");
                                 Console.WriteLine("");
                             }
-                            }
-                             break;
-                         
-                            } 
+                        }
+                        break;
 
-                            } // Fechamento do encerrarLoop.
+                }
 
-                            }
-                            
-                            }
+            } // Fechamento do encerrarLoop.
+
+        }
+
+    }
 
 
     public abstract class gamePlay
@@ -372,14 +365,14 @@ namespace HelloWold
     public class Bruno : gamePlay
     {
 
-       
+
 
         public string KeyWord;
         public string upperKeyWord;
 
         public string secondKeyWord;
         public string secKeyWord; // É o ToUpper da variavel secondKeyWord.
-       
+
         public string upperSelecionador;
         public string secondTry;
 
@@ -602,7 +595,7 @@ namespace HelloWold
                             }
                         }
 
-                        
+
 
                         switch (secondTry)
                         {
@@ -651,6 +644,15 @@ namespace HelloWold
                                     Console.WriteLine("");
                                     Console.WriteLine("VOCÊ MATOU BRUNO - O MÉDICO QUE ENCONTRARIA A CURA DO CÂNCER EM 2048 - ATRAVÉS DE TERAPIA GENÉTICA.");
                                     Console.WriteLine("");
+
+                                    Console.WriteLine(".     |___________________________________");
+                                    Console.WriteLine("|-----|- - -|''''|''''|''''|''''|''''|'##\\|__");
+                                    Console.WriteLine("|- -  |  cc 6    5    4    3    2    1 ### __]==----------------------");
+                                    Console.WriteLine("|-----|________________________________##/|");
+                                    Console.WriteLine("'     |");
+
+
+                                    Console.WriteLine("");
                                     Console.WriteLine("COMO VOCÊ SE SENTE CONSIGO MESMO(A)?");
                                     Console.WriteLine("");
                                     Console.WriteLine("DESEJA:");
@@ -686,6 +688,14 @@ namespace HelloWold
                                     Console.WriteLine("");
                                     Console.WriteLine("PARABÉNS! VOCÊ SALVOU BRUNO - O MÉDICO QUE ENCONTRARÁ A CURA DO CÂNCER EM 2048 - ATRAVÉS DE TERAPIA GENÉTICA.");
                                     Console.WriteLine();
+
+                                    Console.WriteLine(".     |___________________________________");
+                                    Console.WriteLine("|-----|- - -|''''|''''|''''|''''|''''|'##\\|__");
+                                    Console.WriteLine("|- -  |  cc 6    5    4    3    2    1 ### __]==----------------------");
+                                    Console.WriteLine("|-----|________________________________##/|");
+                                    Console.WriteLine("'     |");
+
+                                    Console.WriteLine("");
                                     Console.WriteLine("COMO VOCÊ SE SENTE CONSIGO MESMO(A)?");
                                     Console.WriteLine("");
                                     Console.WriteLine("DESEJA:");
@@ -733,6 +743,15 @@ namespace HelloWold
                         Console.WriteLine("");
                         Console.WriteLine("PARABÉNS! VOCÊ SALVOU BRUNO - O MÉDICO QUE ENCONTRARÁ A CURA DO CÂNCER EM 2048 - ATRAVÉS DE TERAPIA GENÉTICA.");
                         Console.WriteLine();
+
+                        Console.WriteLine(".     |___________________________________");
+                        Console.WriteLine("|-----|- - -|''''|''''|''''|''''|''''|'##\\|__");
+                        Console.WriteLine("|- -  |  cc 6    5    4    3    2    1 ### __]==----------------------");
+                        Console.WriteLine("|-----|________________________________##/|");
+                        Console.WriteLine("'     |");
+
+                        Console.WriteLine("");
+
                         Console.WriteLine("COMO VOCÊ SE SENTE CONSIGO MESMO(A)?");
                         Console.WriteLine("");
                         Console.WriteLine("DESEJA:");
@@ -775,10 +794,10 @@ namespace HelloWold
     public class Omar : gamePlay
     {
 
-       
+
 
         public string EnterDescription;
-      
+
         public string KeyWord;
         public string secKeyWord;
         public string upperKeyWord;
@@ -918,7 +937,16 @@ namespace HelloWold
                     Console.WriteLine("");
                     Console.WriteLine("OS ANIMAIS (DAS SAÍDAS) SÃO:");
                     Console.WriteLine();
-                    Console.WriteLine("…⁠ᘛ⁠⁐̤⁠ᕐ⁠ᐷ – CAMALEÃO (DE JACKSON)");
+
+                    Console.WriteLine("     _..-'-.   _.--' ");
+                    Console.WriteLine(" _.-' (  0) Y''      ");
+                    Console.WriteLine("(---.._,            – CAMALEÃO (DE JACKSON) ");
+                    Console.WriteLine(" `---.,___.-\\  \\----");
+                    Console.WriteLine("    _/  /  _/  /      ");
+                    Console.WriteLine("   (((-'  (((-'       ");
+
+
+
                     Console.WriteLine();
 
 
@@ -926,10 +954,10 @@ namespace HelloWold
                     Console.WriteLine(" (()) - POLVO (MÍMICO)");
 
                     Console.WriteLine();
-                    Console.WriteLine(" _ \\/ _");
+                    Console.WriteLine("  _ \\/ _");
                     Console.WriteLine("/o \\{}/ o\\");
                     Console.WriteLine("\\   ()   /");
-                    Console.WriteLine(" > /\\ <  – BORBOLETA (FOLHA INDIANA)");
+                    Console.WriteLine("  > /\\ <  – BORBOLETA (FOLHA INDIANA)");
                     Console.WriteLine(" (o/\\/\\o)");
                     Console.WriteLine("  )    (");
 
@@ -1058,10 +1086,22 @@ namespace HelloWold
                                 Console.WriteLine("");
                                 Console.WriteLine("VOCÊ MATOU OMAR - UM CIVIL QUE INICIARIA (NO DIA 25 DE DEZEMBRO DE 2025) UM MASSACRE (COM ARMA DE FOGO) EM TORONTO.");
                                 Console.WriteLine();
+
+                                Console.WriteLine(" ,________________________________");
+                                Console.WriteLine("|__________,----------._ [____]  \"\"-,__  __...-----===\"");
+                                Console.WriteLine("        (_(||||||||||||)___________/   \"\"             |");
+                                Console.WriteLine("           `----------'        [ ))\"-,                |");
+                                Console.WriteLine("                                \"\"    ``,  _,--...___  |");
+                                Console.WriteLine("                                        `/          \"\"\"");
+
+
+                                Console.WriteLine("");
+
                                 Console.WriteLine("COMO VOCÊ SE SENTE CONSIGO MESMO(A)?");
                                 Console.WriteLine("");
 
                                 Console.WriteLine("DESEJA:");
+                                Console.WriteLine("");
                                 Console.WriteLine("1 - IR PARA O PRÓXIMO DESAFIO");
                                 Console.WriteLine("2 - REINICIAR");
                                 Console.WriteLine("");
@@ -1099,9 +1139,19 @@ namespace HelloWold
                         Console.WriteLine("");
                         Console.WriteLine("PARABÉNS! VOCÊ SALVOU OMAR - UM CIVIL QUE INICIARÁ (NO DIA 25 DE DEZEMBRO DE 2025) UM MASSACRE (COM ARMA DE FOGO) EM TORONTO.");
                         Console.WriteLine();
+
+                        Console.WriteLine(" ,________________________________");
+                        Console.WriteLine("|__________,----------._ [____]  \"\"-,__  __...-----===\"");
+                        Console.WriteLine("        (_(||||||||||||)___________/   \"\"             |");
+                        Console.WriteLine("           `----------'        [ ))\"-,                |");
+                        Console.WriteLine("                                \"\"    ``,  _,--...___  |");
+                        Console.WriteLine("                                        `/          \"\"\"");
+
+                        Console.WriteLine("");
                         Console.WriteLine("COMO VOCÊ SE SENTE CONSIGO MESMO(A)?");
                         Console.WriteLine();
                         Console.WriteLine("DESEJA:");
+                        Console.WriteLine("");
                         Console.WriteLine("1 - IR PARA O PRÓXIMO DESAFIO");
                         Console.WriteLine("2 - REINICIAR");
                         Console.WriteLine("");
@@ -1187,11 +1237,11 @@ namespace HelloWold
                 character02.LevelAssigned();
                 character02.ShowDescription();
                 character02.StartLevel();
-                
+
                 if (character02.nextLevel == "1" || character02.nextLevel2 == "1")
                 {
                     Console.WriteLine("");
-                    Console.WriteLine("POR ENQUANTO NÃO HÁ MAIS DESAFIO");
+                    Console.WriteLine("POR ENQUANTO, NÃO HÁ MAIS DESAFIOS!");
                 }
 
             }
@@ -1202,6 +1252,13 @@ namespace HelloWold
                 character01.LevelAssigned();
                 character01.ShowDescription();
                 character01.StartLevel();
+
+                if (character01.nextLevelB == "1" || character01.nextLevelB1 == "1" || character01.nextLevelB2 == "1")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("POR ENQUANTO, NÃO HÁ MAIS DESAFIOS!");
+                }
+
             }
 
 
@@ -1210,3 +1267,4 @@ namespace HelloWold
     }
 
 }
+
